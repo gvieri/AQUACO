@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table style="margin-left: 20px;">
+<!-- Table headers -->
+    <th>
+         <tr style="color: black; ">
+
+        <th>id</th>
+        <th>T_av</th>
+        <th>P_av</th>
+        <th>H_av</th>
+        <th>G_av</th>
+
+        </tr>
+    </th>
+    {%for dummy in query%}
+
+    <tr>
+        <td>
+            {{dummy.id}}
+        </td>
+        <td>
+            {{dummy.timestamp}}
+        </td>
+        <td>
+            {{dummy.T_av}}
+        </td>
+        <td>
+            {{dummy.P_av}}
+        </td>
+        <td>
+            {{dummy.H_av}}
+        </td>
+        <td>
+            {{dummy.G_av}}
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+{% endblock %}

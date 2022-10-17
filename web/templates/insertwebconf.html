@@ -1,0 +1,26 @@
+
+{% block content %}
+
+     <form action = "{{ url_for('insertconf') }}" method = "POST">
+	     <center>
+         <h3>AQUACO WEBCONF insert form</h3>
+	 <br>
+	 <h3>all following values will be used as threshold </h3>
+	 <br> temperature low<br> <input type = "text" name = "tlow" /><br>
+	 <br> temperature high<br> <input type = "text" name = "thigh" /><br>
+	 <br> pressure low <br> <input type = "text" name = "plow" /><br>
+	 <br> pressure high<br> <input type = "text" name = "phigh" /><br>
+	 <br> humidity low<br> <input type = "text" name = "hlow" /><br>
+	 <br> humidity high<br> <input type = "text" name = "hhigh" /><br>
+	 <br> gas low<br> <input type = "text" name = "glow" /><br>
+	 <br> gas high<br> <input type = "text" name = "ghigh" /><br>
+
+	 <!---                               -->
+         <input type = "submit" value = "submit" /><br>
+	     </center>
+      </form>
+
+
+
+{% endblock %}
+

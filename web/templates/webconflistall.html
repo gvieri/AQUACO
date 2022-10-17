@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table style="margin-left: 20px;">
+<!-- Table headers -->
+    <th>
+         <tr style="color: black; ">
+
+        <th>id</th>
+        <th>Name</th>
+        <th>timestamp</th>
+        <th>value</th>
+        <th>uploaded</th>
+
+        </tr>
+    </th>
+    {%for dummy in query%}
+
+    <tr>
+        <td>
+            {{dummy.id}}
+        </td>
+        <td>
+            {{dummy.name}}
+        </td>
+        <td>
+            {{dummy.timestamp}}
+        </td>
+        <td>
+            {{dummy.value}}
+        </td>
+        <td>
+            {{dummy.uploaded}}
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+{% endblock %}

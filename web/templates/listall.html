@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table style="margin-left: 20px;">
+<!-- Table headers -->
+    <th>
+         <tr style="color: black; ">
+
+        <th>id</th>
+        <th>timestamp</th>
+        <th>T low th</th>
+        <th>T high th</th>
+        <th>P low th</th>
+        <th>P high th</th>
+        <th>H low th</th>
+        <th>H high th</th>
+        <th>G low th</th>
+        <th>G high th</th>
+
+        </tr>
+    </th>
+    {%for dummy in query%}
+
+    <tr>
+        <td>
+            {{dummy.id}}
+        </td>
+        <td>
+            {{dummy.dateandtime}}
+        </td>
+        <td>
+            {{dummy.templowth}}
+        </td>
+        <td>
+            {{dummy.temphighth}}
+        </td>
+        <td>
+            {{dummy.preslowth}}
+        </td>
+        <td>
+            {{dummy.preshighth}}
+        </td>
+        <td>
+            {{dummy.hum_lowth}}
+        </td>
+        <td>
+            {{dummy.hum_highth}}
+        </td>
+        <td>
+            {{dummy.gas_lowth}}
+        </td>
+        <td>
+            {{dummy.gas_highth}}
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+{% endblock %}
