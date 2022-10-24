@@ -10,6 +10,6 @@ conda install flask-sqlalchemy
 conda install sqlite
 conda install requests
 conda install flask
-
+conda install sqlalchemy
 
 
