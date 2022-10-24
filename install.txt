@@ -5,3 +5,4 @@ conda install flask-sqlalchemy
 conda install sqlite
 conda install requests
 conda install flask
+sudo apt install  rtl-433
