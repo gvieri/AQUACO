@@ -1,4 +1,6 @@
 #!/bin/bash
+conda create --name testwiththingy
+
 conda activate testwiththingy 
 cd testwiththingy
 
