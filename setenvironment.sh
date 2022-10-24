@@ -2,7 +2,6 @@
 conda create --name testwiththingy
 
 conda activate testwiththingy 
-cd testwiththingy
 
 conda install pyserial
 conda install numpy
